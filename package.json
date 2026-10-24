@@ -21,6 +21,9 @@
     "format:check": "prettier --check .",
     "prepare": "husky"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sumedhaSKumar/notes-sso-app.git"
