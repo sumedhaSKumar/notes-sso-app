@@ -19,7 +19,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:migrate": "node src/db/migrate.js"
   },
   "engines": {
     "node": ">=22"
@@ -38,7 +39,8 @@
   "homepage": "https://github.com/sumedhaSKumar/notes-sso-app#readme",
   "dependencies": {
     "dotenv": "^18.0.9",
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
