@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const config = require('../config');
 require('dotenv').config({ quiet: true });
-const { ValidationError } = require('../utils/errorHandler');
+const { ValidationError } = require('../error');
 
 const minLength = config.minPasswordLength;
 const MAX_BYTES = 72;

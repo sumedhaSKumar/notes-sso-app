@@ -4,7 +4,7 @@ const {
   verifyPassword,
   validatePassword,
 } = require('../src/services/passwordService');
-const { validationError } = require('../src/utils/errorHandler');
+const { validationError } = require('../src/error');
 const MIN = config.minPasswordLength;
 const validPassword = 'a'.repeat(MIN);
 
