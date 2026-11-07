@@ -11,6 +11,12 @@ const config = {
   jwtSecret: getJwtSecret(process.env.JWT_SECRET),
   bcryptRounds,
   minPasswordLength: parseInt(process.env.MIN_PASSWORD_LENGTH, 10) || 8,
+  tokenTtlSeconds: parseInt(process.env.TOKEN_TTL_SECONDS, 10) || 3600,
+  cookie: {
+    secure: process.env.NODE_ENV === 'production',
+    httpOnly: true,
+    sameSite: 'lax',
+  },
 };
 
 module.exports = config;
